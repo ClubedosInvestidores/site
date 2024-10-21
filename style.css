@@ -1,0 +1,43 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+
+
+.container_artigos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-inline: 5%;
+}
+
+.card {
+    width: 15rem;
+    margin-bottom: 30px;
+}
+
+.navbar-expand-lg {
+    padding-inline: 1.9%;
+}
+
+.alin-nav-art{
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 3%;
+    margin-top: 1%;
+}
+
+.filtro {
+    list-style: none;
+    float: left;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 550px) {
+.card {
+    width: auto;
+}
+}
