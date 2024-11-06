@@ -36,6 +36,34 @@
     margin-bottom: 0;
 }
 
+.conteudo-artigo{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+}
+
+.artigo-autor a {
+ text-decoration: none;
+ color: #000000;
+}
+
+.texto-e-sugestoes {
+    display: flex;
+}
+
+.artigo-texto {
+    margin-right: 5%;
+}
+
+.artigo-texto a {
+    text-decoration: none;
+}
+
+.artigo-sugestoes{
+    margin-top: 100px;
+}
+    
+
 @media screen and (max-width: 550px) {
 .card {
     width: auto;
