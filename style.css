@@ -2,6 +2,127 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+body {
+    margin: 0;
+}
+
+
+.navbar {
+    background-color: #07598c;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.nav_cont {
+    display: flex;
+    align-items: baseline;
+    margin-inline: 5%;
+    height: 40px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.nav_links {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.nav_links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.banner {
+    height: 400px;
+    background-color: #fff;
+    border-radius: 0 0 200px 0;
+    box-shadow: 0px 20px 20px #b9b9b9;
+}
+
+.cont_banner {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-inline: 2%;
+}
+
+.cont_1 {
+    width: 70%;
+}
+
+.img_banner {
+    width: 320px;
+    height: 320px;
+    border-radius: 20%;
+    background-image: url(img/img_banner.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cont_card {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+.card_ind {
+    width: 220px;
+    height: 220px;
+    border: 2px solid black;
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateY(300px);
+}
+
+@keyframes card_ind {
+    from {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card_ind:nth-child(1) {
+    animation: card_ind 3s ease forwards;
+
+}
+
+.card_ind:nth-child(2) {
+    animation: card_ind 4s ease forwards;
+
+}
+
+.card_ind:nth-child(3) {
+    animation: card_ind 5s ease forwards;
+
+}
+
+.sobre {
+    height: 300px;
+    margin-top: 150px;
+    background-color: #07598c;
+    box-shadow: 0 0 40px 50px #07598c;
+}
+
+
+
+
+
+
+
 
 
 
@@ -15,15 +136,11 @@
 }
 
 .card {
-    width: 15rem;
+    width: 300px;
     margin-bottom: 30px;
 }
 
-.navbar-expand-lg {
-    padding-inline: 1.9%;
-}
-
-.alin-nav-art{
+.alin-nav-art {
     justify-content: space-between;
     align-items: center;
     margin-inline: 3%;
@@ -36,8 +153,8 @@
     margin-bottom: 0;
 }
 
-@media screen and (max-width: 550px) {
-.card {
-    width: auto;
-}
+@media screen and (max-width: 1016px) {
+    .card {
+        width: 350px;
+    }
 }
