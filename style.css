@@ -62,7 +62,7 @@ body {
     width: 320px;
     height: 320px;
     border-radius: 20%;
-    background-image: url(img/img_banner.jpg);
+    background-image: url(img/img_banner.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -78,9 +78,9 @@ body {
     width: 220px;
     height: 220px;
     border: 2px solid black;
-    border-radius: 20px;
     opacity: 0;
     transform: translateY(300px);
+    border-radius: 20px;
 }
 
 @keyframes card_ind {
@@ -101,12 +101,12 @@ body {
 }
 
 .card_ind:nth-child(2) {
-    animation: card_ind 4s ease forwards;
+    animation: card_ind 3.5s ease forwards;
 
 }
 
 .card_ind:nth-child(3) {
-    animation: card_ind 5s ease forwards;
+    animation: card_ind 4s ease forwards;
 
 }
 
@@ -135,26 +135,56 @@ body {
     margin-inline: 5%;
 }
 
-.card {
+.card-art {
     width: 300px;
+    height: 200px;
     margin-bottom: 30px;
-}
-
-.alin-nav-art {
-    justify-content: space-between;
+    border: 2px solid #07598c;
+    border-radius: 20px;
+    display: grid;
+    justify-content: center;
     align-items: center;
-    margin-inline: 3%;
-    margin-top: 1%;
 }
 
-.filtro {
-    list-style: none;
-    float: left;
-    margin-bottom: 0;
+.card-body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 20px;
 }
 
-@media screen and (max-width: 1016px) {
-    .card {
-        width: 350px;
+.card-body h5 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.card-button {
+    border: 2px solid #07598c;
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+    background-color: #fff;
+    color: #07598c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+@keyframes card-button {
+    from {
+        background-color: #fff;
+        color: #07598c;
+    }
+
+    to {
+        background-color: #07598c;
+        color: #fff;
     }
 }
+
+.card-button:hover {
+    animation: card-button 0.3s ease forwards; 
+}
+
