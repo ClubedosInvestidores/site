@@ -57,6 +57,28 @@ body {
     width: 100%;   /* A linha se expande até a largura total do link */
 }
 
+.dropdown {
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background: #07598c;
+    padding-inline: 10px;
+    border-radius: 15px;
+}
+
+.dropdown li {
+    display: block;
+    margin-block: 20px;
+}
+
+ul li:hover ul.dropdown {
+    display:block;
+}
+
+ul.dropdown:hover {
+    height: 140px;
+}
+
 .banner {
     height: 400px;
     background-color: #fff;
@@ -91,46 +113,9 @@ body {
     justify-content: space-around;
     margin-top: 35px;
 }
-
-.card_ind {
-    width: 220px;
-    height: 220px;
-    border: 2px solid black;
-    opacity: 0;
-    transform: translateY(300px);
-    border-radius: 20px;
-}
-
-@keyframes card_ind {
-    from {
-        opacity: 0;
-        transform: translateY(300px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.card_ind:nth-child(1) {
-    animation: card_ind 3s ease forwards;
-
-}
-
-.card_ind:nth-child(2) {
-    animation: card_ind 3.5s ease forwards;
-
-}
-
-.card_ind:nth-child(3) {
-    animation: card_ind 4s ease forwards;
-
-}
-
 .sobre {
     height: 300px;
-    margin-block: 150px;
+    margin-block: 100px;
     background-color: #07598c;
     box-shadow: 0 0 40px 50px #07598c;
     display: flex;
@@ -204,11 +189,6 @@ footer {
     padding-inline: 20px;
 }
 
-.card-body h5 {
-    font-size: 20px;
-    margin: 0;
-}
-
 .card-button {
     border: 2px solid #07598c;
     border-radius: 5px;
@@ -222,6 +202,17 @@ footer {
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.5s ease;
 }
+
+.card-title {
+    color: #07598c;
+    font-size: 20px;
+    margin: 0;
+}
+
+.card-text {
+    color: #07598c;;
+}
+
 
 .card-button:hover {
     background-color: #07598c;
