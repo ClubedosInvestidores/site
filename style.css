@@ -4,7 +4,150 @@
 
 
 
+.navbar {
+    background-color: #07598c;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
 
+.nav_cont {
+    display: flex;
+    align-items: baseline;
+    margin-inline: 5%;
+    height: 40px;
+    width: 100%;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.nav_links {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.nav_link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+
+.nav_link::after {
+    content: '';  /* Não precisa de texto */
+    position: absolute;
+    bottom: 0;    /* Coloca a linha na parte inferior do link */
+    left: 0;      /* Alinha a linha à esquerda */
+    width: 0;     /* Inicialmente a linha tem largura 0 */
+    height: 2px;  /* Espessura da linha */
+    background-color: #fff;  /* Cor da linha (igual à cor do texto) */
+    transition: width 0.3s ease;  /* Transição suave para aumentar a largura */
+}
+
+/* Quando o link for hover, a linha se expande */
+.nav_link:hover::after {
+    width: 100%;   /* A linha se expande até a largura total do link */
+}
+
+.dropdown {
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background: #07598c;
+    padding-inline: 10px;
+    border-radius: 15px;
+}
+
+.dropdown li {
+    display: block;
+    margin-block: 20px;
+}
+
+ul li:hover ul.dropdown {
+    display:block;
+}
+
+ul.dropdown:hover {
+    height: 140px;
+}
+
+.banner {
+    height: 400px;
+    background-color: #fff;
+    border-radius: 0 0 25vh 0;
+    box-shadow: 0px 20px 20px #b9b9b9;
+}
+
+.cont_banner {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-inline: 2%;
+}
+
+.cont_1 {
+    width: 70%;
+}
+
+.img_banner {
+    width: 320px;
+    height: 320px;
+    border-radius: 20%;
+    background-image: url(img/img_banner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cont_card {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+.sobre {
+    height: 300px;
+    margin-block: 100px;
+    background-color: #07598c;
+    box-shadow: 0 0 40px 50px #07598c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre div {
+    width: 75%;
+}
+
+.sobre img {
+    box-shadow: 0 0 15px 15px #fff;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+footer {
+    background-color: #07598c;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.white {
+    color: white;
+}
+
+.xx-large {
+    font-size: xx-large;
+}
+
+.pi-5 {
+ padding-inline: 5%;
+}
 
 
 .container_artigos {
@@ -59,9 +202,6 @@
     text-decoration: none;
 }
 
-.artigo-sugestoes{
-    margin-top: 100px;
-}
     
 /*  Calculadora */
 body {
