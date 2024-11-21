@@ -15,8 +15,8 @@
             const total = capital + juros;
 
             // Exibir o resultado
-            document.getElementById('juros').textContent = juros.toFixed(2);
-            document.getElementById('total').textContent = total.toFixed(2);
-            document.getElementById('resultado').style.display = 'block';
+            document.getElementById('resultado').innerHTML = `
+        <p><strong>Juros: </strong>R$ ${juros.toFixed(2)}</p>
+        <p><strong>Montante Final: </strong>R$ ${total.toFixed(2)}</p>
+    `;
         }
-

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Juros Compostos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Juros Compostos</h1>
+
+        <form id="calcForm">
+            <div class="input-group">
+                <label for="principal">Valor Principal (R$):</label>
+                <input type="number" id="principal" placeholder="Digite o valor inicial" required>
+            </div>
+
+            <div class="input-group">
+                <label for="taxa">Taxa de Juros Anual (%):</label>
+                <input type="number" id="taxa" placeholder="Digite a taxa de juros" required>
+            </div>
+
+            <div class="input-group">
+                <label for="tempo">Tempo (em anos):</label>
+                <input type="number" id="tempo" placeholder="Digite o tempo em anos" required>
+            </div>
+
+            <button type="button" onclick="calcularJurosCompostos()">Calcular</button>
+        </form>
+
+        <div id="resultado" class="resultado">
+            <!-- O resultado será exibido aqui -->
+        </div>
+    </div>
+
+    <script src="juCompostos.js"></script>
+</body>
+</html>

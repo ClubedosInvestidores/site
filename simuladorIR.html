@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Imposto de Renda sobre Ganho de Capital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Imposto de Renda sobre Ganho de Capital</h1>
+
+        <form id="capitalGainsForm">
+            <div class="input-group">
+                <label for="purchasePrice">Preço de Compra (R$):</label>
+                <input type="number" id="purchasePrice" required>
+            </div>
+
+            <div class="input-group">
+                <label for="salePrice">Preço de Venda (R$):</label>
+                <input type="number" id="salePrice" required>
+            </div>
+
+            <div class="input-group">
+                <label for="holdingPeriod">Tempo de Posse (em anos):</label>
+                <input type="number" id="holdingPeriod" required>
+            </div>
+
+            <button type="submit">Calcular Imposto</button>
+        </form>
+
+        <div id="result" class="result">
+            <p><strong>Ganho de Capital:</strong> R$ <span id="capitalGains">0,00</span></p>
+            <p><strong>Imposto de Renda a Pagar:</strong> R$ <span id="taxAmount">0,00</span></p>
+        </div>
+    </div>
+
+    <script src="simuladorIR.js"></script>
+</body>
+</html>
